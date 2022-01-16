@@ -1,0 +1,73 @@
+//change min-width to a larger value in order to just display two items per row
+
+.profilepage {
+  min-width: 30%;
+  height: 580px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  overflow:hidden;
+    
+    
+    
+    .profile-background {
+      padding-top: 15px;
+      width: 100%;
+      display: flex;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      
+    
+      .wrapper {
+        
+        height: 500px;
+        width: 700px;
+
+        .sign-out {
+          position: relative;
+          height: 75px;
+          width: 100%;
+          font-family: 'Rajdhani', sans-serif;
+          font-weight: bold;
+          background-color: rgba(0,0,0, 0);
+          color: rgba(255,255,255,.8);
+          border: 1px dotted white; 
+          font-size: 24px;
+         
+          
+          &:hover {
+            cursor: pointer;
+          }  
+        }
+      
+    
+    .new-itinerary {
+      position: relative;
+      height: 75px;
+      width: 100%;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: bold;
+      background-color: rgba(0,0,0, 0);
+      color: rgba(255,255,255,.8);
+      border: 1px dotted white; 
+      font-size: 24px;
+     
+      
+      &:hover {
+        cursor: pointer;
+      }  
+    }
+  
+    }
+  }
+
+    
+}
+  
+    

@@ -1,0 +1,138 @@
+
+.accordion-favorites {
+  position: relative;
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  .favorites {
+    height: 75px;
+    width: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    background-color: rgba(0,0,0, 0);
+    color: rgba(255,255,255,.8);
+    border: 1px dotted white; 
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+      cursor: pointer;
+    }  
+    
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 23px;
+        position: absolute;
+
+
+    }
+    .arrow {
+        width: 20%;
+        padding-top: 23px;
+        text-align: right;
+        margin-right: 30px;
+        font-size: 24px;
+        
+    }
+
+  }
+    .favorite-child-show {
+      
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      top: 10px;
+    
+
+      .text {
+        text-align: center;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+        color: rgba(255,255,255,.8);
+        font-size: 24px;
+        padding: 5px;
+      }
+      
+    }
+    .favorite-child {
+      max-height: 0;
+      overflow: hidden;
+    }
+      
+  
+
+}
+
+.accordion-created {
+  position: relative;
+  width: 100%;
+  padding-bottom: 55px;
+
+  .created-itineraries {
+
+    height: 75px; 
+    width: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    background-color: rgba(0,0,0, 0);
+    color: rgba(255,255,255,.8);
+    border: 1px dotted white; 
+    display: flex;
+    justify-content: flex-end;
+   
+    &:hover {
+      cursor: pointer;
+    }  
+    
+     
+    
+    .title {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      padding-top: 23px;
+      position: absolute;
+
+
+  }
+  .arrow {
+      width: 20%;
+      padding-top: 23px;
+      text-align: right;
+      margin-right: 30px;
+      font-size: 24px;
+      
+  }
+
+}
+  .create-child-show {
+    height: auto;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    
+    
+
+    .text {
+      text-align: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: bold;
+      color: rgba(255,255,255,.8);
+      font-size: 24px;
+      padding: 5px;
+    }
+    
+  }
+
+  .create-child {
+    max-height: 0;
+    overflow: hidden;
+  }
+    
+
+
+}
