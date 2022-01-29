@@ -4,6 +4,22 @@
     
 }
 
+.title {
+  position: absolute;
+  font-family: 'Rajdhani', sans-serif;
+  width: 100%;
+  
+  .title-container {
+
+      font-size: 50px;
+      font-weight: 100;
+      padding-bottom: 10px;
+      text-align:center;
+      padding-top: 5px;
+      
+  }
+}
+
 
 .header {
     height: 70px;
@@ -14,24 +30,16 @@
     display: flex;
     justify-content: space-between;
     
-    .title {
-        font-family: 'Rajdhani', sans-serif;
-        width: 95%;
-        
-        .title-container {
-            font-size: 50px;
-            font-weight: 100;
-            padding-bottom: 10px;
-            text-align:right;
-            padding-top: 5px;
-            padding-right: 15px;
-        }
-    }
+    
   
     .logo-container {
       height: 100%;
       width: 7%;
       padding: 10px 10px;
+
+      .logo {
+        height: 100%;
+      }
     }
   
     .options {

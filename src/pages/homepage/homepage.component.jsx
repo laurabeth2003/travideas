@@ -13,6 +13,7 @@ const HomePage = ({history, match}) => (
             <button className='explore-button' onClick={() => history.push(`${match.url}${'popular'}`)}>EXPLORE</button>
         </div>
         
+        
     </div> 
 )
 

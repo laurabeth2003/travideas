@@ -1,0 +1,52 @@
+.create-form {
+    .create-form-title {
+        font-size: 30px;
+        text-align: center;
+        width: 30%;
+        left: 35%;
+        padding-top: 1%;
+        position: absolute;
+        font-weight: lighter;
+    }
+
+    .create-form-container { 
+        padding-top: 4%;
+
+        .create-group-star {
+            position: relative;
+            margin: 45px 0;
+            .star-label {
+                color: black;
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 5px;
+                top: -25px;
+                transition: 300ms ease all;
+            
+                
+            }
+
+            .star-container {
+                height: 40px;
+                width: 80%;
+                background-color: rgba(255,255,255,0);
+            
+            
+                .star {
+                    cursor: pointer;
+                    transition: color 200ms; 
+                    height: 100%;
+            
+                }
+            }
+         
+        }
+        
+        input[type="radio"] {
+            display: none;
+        }
+    }
+}

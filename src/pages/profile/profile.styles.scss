@@ -2,7 +2,7 @@
 
 .profilepage {
   min-width: 30%;
-  height: 580px;
+  height: 850px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -14,7 +14,6 @@
     
     
     .profile-background {
-      padding-top: 15px;
       width: 100%;
       display: flex;
       background-position: center;
@@ -26,7 +25,7 @@
     
       .wrapper {
         
-        height: 500px;
+        height: 700px;
         width: 700px;
 
         .sign-out {

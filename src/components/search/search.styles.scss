@@ -1,0 +1,156 @@
+$sub-color: grey;
+$main-color: black;
+
+
+
+.search-group-city {
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+
+  .search-city-label {
+    color: $main-color;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    width: 16%;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+    color: black;
+    transition: 300ms ease all;
+    
+
+    
+  }
+
+  .search-city-input {
+    background: none;
+    background-color: white;
+    font-family: 'Rajdhani', sans-serif;
+    color: $main-color;
+    font-weight: bolder;
+    
+    font-size: 18px;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 0px 24% 0px 10px;
+
+  }
+
+}
+
+.search-group-country {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 35%;
+  display: flex;
+  justify-content: space-between;
+
+
+  .search-country-label {
+    color: $main-color;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    width: 30%;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+    color: black;
+    transition: 300ms ease all;
+    
+    
+
+    
+  }
+
+  .search-country-input {
+    background: none;
+    background-color: white;
+    font-family: 'Rajdhani', sans-serif;
+    color: $main-color;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 0px 20% 0px 10px;
+
+  }
+
+}
+
+.search-group-length {
+  position: relative;
+  width: 25%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:70%;
+  display: flex;
+  justify-content: space-between;
+
+
+  .search-length-label {
+    color: $main-color;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+    color: black;
+    transition: 300ms ease all;
+    
+
+    
+  }
+
+  .search-length-input {
+    background: none;
+    background-color: white;
+    font-family: 'Rajdhani', sans-serif;
+    color: $main-color;
+    font-weight: bolder;
+    height: 50%;
+    font-size: 18px;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    width: 40%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin-left: 1%;
+
+    position: relative;
+
+  }
+
+  .days-div {
+    color: $main-color;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+    
+    margin-right: 0%;
+    transition: 300ms ease all;
+    
+
+  }
+
+}
