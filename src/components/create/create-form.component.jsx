@@ -5,8 +5,9 @@ import { createItineraryDocument} from "../../firebase/firebase.utils"
 import {firestore, storage} from "../../firebase/firebase.utils"
 import CreateFormInput from '../create-form-input/create-form-input.component'
 import CreateFormSelect from '../create-form-select/create-form-select.component'
-import { ReactComponent as Full} from './fullstar.svg'
-import { ReactComponent as Empty} from './emptystar.svg'
+import CreateFormTextArea from '../create-form-text/create-form-text-area.component';
+import { ReactComponent as Full} from '../../assets/fullstar.svg'
+import { ReactComponent as Empty} from '../../assets/emptystar.svg'
 import ImageUpload from '../imageupload/imageupload.component'
 class CreateForm extends React.Component {
     constructor({createid}) {
@@ -26,10 +27,25 @@ class CreateForm extends React.Component {
     }
     handleSubmit = async event => {
         event.preventDefault();
-        
+        let lengthNum = 0
         const { city, country, length, description, coverphoto, coverpath, userrating, creatorid} = this.state;
-        
-        
+        const citylower = city.toLowerCase()
+        const countrylower = country.toLowerCase()
+        if (length === '1-3 Days') {
+            lengthNum = 3
+        } 
+        else if (length === '4-6 Days') {
+            lengthNum = 6
+        }
+
+        else if (length === '7-9 Days') {
+            lengthNum = 9
+        }
+
+        else {
+            lengthNum = 10
+        }
+            
         const creatorobject = await (await firestore.collection('users').doc(creatorid).get()).data()
         const creatorusername = creatorobject['username']
         
@@ -49,9 +65,16 @@ class CreateForm extends React.Component {
                     .getDownloadURL()
                     .then(url => {
                         this.setState({'coverurl':url},
-                        () => { console.log(this.state.coverurl) 
+                        async () => { console.log(this.state.coverurl) 
+                        
                         const {coverurl} = this.state
-                        createItineraryDocument({city, country, length, description, coverphoto, userrating, creatorid, creatorusername, coverurl})
+                        const doc = await createItineraryDocument({citylower, lengthNum, countrylower, length, description, coverphoto, userrating, creatorid, creatorusername, coverurl})
+                        const data = {
+                            id: doc.toString()
+                        }
+                        const update = await firestore.collection('itinerary').doc(doc.toString())
+                        await update.update(data)
+                        console.log(update)
                         this.setState({
                             city: '',
                             country: '',
@@ -62,9 +85,6 @@ class CreateForm extends React.Component {
                             coverpath: {},
                             
                         })
-
-                    
-                    
                     })
                         
                     })
@@ -73,6 +93,8 @@ class CreateForm extends React.Component {
             )
 
         } catch(error) {console.log(error)}
+
+        
 
     }
 
@@ -97,7 +119,9 @@ class CreateForm extends React.Component {
 
     
     render() {
+        console.log(this.state.description)
         return (
+            
             <div className = 'create-form'>
                 <div className = 'create-form-title'>NEW ITINERARY:</div>
                 <div className = 'create-form-container'>
@@ -131,7 +155,7 @@ class CreateForm extends React.Component {
                             label = 'ITINERARY COVER PHOTO:'
                             required/>
                 
-                        <CreateFormInput name="description" 
+                        <CreateFormTextArea name="description" 
                             type="text" 
                             handleChange ={this.handleChange}
                             value ={this.state.description} 
@@ -157,7 +181,7 @@ class CreateForm extends React.Component {
                         </div>
                         
                     
-                        <button type='submit'>Create Itinerary</button>
+                        <button className = 'submit-button' type='submit'>CREATE ITINERARY</button>
                         
                     </form>
                 </div>

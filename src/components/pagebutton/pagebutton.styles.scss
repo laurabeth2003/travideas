@@ -1,0 +1,20 @@
+.selected-page {
+    width: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #3b091d;
+    border: none;
+    
+
+}
+
+.unselected-page {
+    width: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #581d35;
+    border: none;
+    cursor: pointer;
+}

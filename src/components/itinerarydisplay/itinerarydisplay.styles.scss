@@ -1,0 +1,138 @@
+.itinerary-container2 {
+    min-width: 20%;
+    height: 250px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px 10px 7.5px 15px;
+    overflow: hidden;
+
+
+    .itinerary-image {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+      }
+
+    
+
+    .title-container {
+        position: absolute;
+        left: 4.75%;
+        margin-top: 175px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 14px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .length-container {
+        position: absolute;
+        left: 68.25%;
+        margin-top: 175px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 14px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .community-container {
+        position: absolute;
+        left: 36.5%;
+        margin-top: 175px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 14px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+}
+
+
+
+
+
+.itinerary-container1 {
+    min-width: 30%;
+    height: 375px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px 10px 7.5px 15px;
+    overflow: hidden;
+
+
+    .itinerary-image {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+      }
+
+    
+
+    .title-container {
+        position: absolute;
+        left: 4.75%;
+        margin-top: 270px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .length-container {
+        position: absolute;
+        left: 68.25%;
+        margin-top: 270px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .community-container {
+        position: absolute;
+        left: 36.5%;
+        margin-top: 270px;
+        width: 27%;
+        border: 1px dotted white;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        font-weight: normal;
+        background-color: rgba(0,0,0,.4);
+    }
+
+}

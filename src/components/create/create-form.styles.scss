@@ -9,12 +9,15 @@
         font-weight: lighter;
     }
 
+    
+
     .create-form-container { 
         padding-top: 4%;
 
         .create-group-star {
             position: relative;
-            margin: 45px 0;
+            margin-top: 45px;
+            margin-bottom: 20px;
             .star-label {
                 color: black;
                 font-family: 'Rajdhani', sans-serif;
@@ -47,6 +50,20 @@
         
         input[type="radio"] {
             display: none;
+        }
+
+        .submit-button {
+            width: 100%;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            position: relative;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: #82252e;
+            color: white;
+            cursor: pointer;
+            
         }
     }
 }

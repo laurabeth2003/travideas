@@ -51,6 +51,7 @@ export const createItineraryDocument = async (additionalData) => {
         createdAt,
         communitymembers: 0,
         communityratingtotal: 0,
+        communityaverage: 0,
         ...additionalData
       })
       return (newitinerary.id)
@@ -67,7 +68,7 @@ firebase.initializeApp(config);
 const storage = firebase.storage();
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
-
+export const fire = firebase;
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
 

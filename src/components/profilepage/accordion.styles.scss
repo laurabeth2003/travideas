@@ -10,7 +10,7 @@
     width: 100%;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
-    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0,0,0, .5);
     color: rgba(255,255,255,.8);
     border: 1px dotted white; 
     display: flex;
@@ -41,7 +41,8 @@
 
   }
     .favorite-child-show {
-      
+      max-height: 400px;
+      overflow: auto;
       justify-content: center;
       text-align: center;
       position: relative;
@@ -78,7 +79,7 @@
     width: 100%;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
-    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0,0,0, .5);
     color: rgba(255,255,255,.8);
     border: 1px dotted white; 
     display: flex;
@@ -110,7 +111,8 @@
 
 }
   .create-child-show {
-    height: auto;
+    max-height: 400px;
+    overflow: auto;
     justify-content: center;
     position: relative;
     top: 10px;

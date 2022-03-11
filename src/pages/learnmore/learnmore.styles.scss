@@ -1,0 +1,137 @@
+//change min-width to a larger value in order to just display two items per row
+
+.learn-more-page {
+    min-width: 30%;
+    height: 850px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0 7.5px 15px;
+    overflow: hidden;
+    
+    
+    .learn-more-page-background {
+      width: 100%;
+      height: 100%;
+      background-position:center;
+      background-size:cover;
+  
+  
+    }
+  
+    .content {
+      position: absolute;
+      height: 750px;
+      top: 100px;
+      width: 90%;
+      padding: 0px 25px;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid black;
+      background-color: rgba(0,0,0,.6);
+
+      .learn-box {
+        width: 85%;
+        position: relative;
+        left: 7.5%;
+        top: 14%;
+
+        .learn-more-content {
+            font-family: 'Rajdhani', sans-serif;
+            text-align: left;
+            line-height: 45px;
+            letter-spacing: 3px;
+            position: absolute;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            
+    
+    
+          }
+
+      }
+      
+      
+  
+    }
+    .learn-title {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        width: 80%;
+        top: 2%;
+        left: 10%;
+        margin-bottom: 6px;
+        font-size:36px;
+        color:rgba(255,255,255, 1);
+        
+    }
+  
+    
+    .explore-learn-button {
+      position: absolute;
+      left: 10%;
+      bottom: 5%;
+      height: 75px;
+      width: 80%;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: bold;
+      background-color: rgba(0,0,0, 0);
+      color: rgba(255,255,255,.8);
+      border: 1px dotted white; 
+      font-size: 28px;
+     
+      
+      &:hover {
+        cursor: pointer;
+      
+        & .background-image {
+          transform: scale(1.1);
+          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+      
+        & .content {
+          opacity: 0.9;
+        }
+      }  
+    }
+  
+    .learn-more {
+      position: absolute;
+      left: 26%;
+      top: 50%;
+      height: 75px;
+      width: 20%;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: bold;
+      background-color: rgba(0,0,0, 0);
+      color: rgba(255,255,255,.8);
+      border: 1px dotted white; 
+      font-size: 24px;
+     
+      
+      &:hover {
+        cursor: pointer;
+      
+        & .background-image {
+          transform: scale(1.1);
+          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+      
+        & .content {
+          opacity: 0.9;
+        }
+      }  
+    }
+  
+  
+  
+  
+    
+  }
+  
+    
