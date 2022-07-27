@@ -119,7 +119,6 @@ class CreateForm extends React.Component {
 
     
     render() {
-        console.log(this.state.description)
         return (
             
             <div className = 'create-form'>

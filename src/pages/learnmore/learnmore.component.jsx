@@ -1,12 +1,10 @@
 import React from 'react';
 import './learnmore.styles.scss'
-
+import learnmoreBackground from "./learnmorebackground.jpg"
 const LearnMore = ({history, match}) => (
 
     <div className='learn-more-page'>
-        <div className='learn-more-page-background' style = {{
-             backgroundImage: `url(${'https://images.unsplash.com/photo-1543258326-f076470a4415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80'})`
-        }}></div>
+        <img className='learn-more-page-background' src={learnmoreBackground}></img>
         <div className='content'> 
             <h1 className='learn-title'>EXPLORING THE WORLD ONE ITINERARY AT A TIME</h1>
             <div className = 'learn-box'>
